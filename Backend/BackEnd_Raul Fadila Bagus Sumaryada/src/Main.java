@@ -14,7 +14,7 @@ public class Main {
         Player player3 = new Player ("Stelle123");
         Player player4 = new Player ("Banananana");
 
-        // Create and save Player
+        // Create and save Model.Player
         Player savePlayer;
 
         player1.updateHighScore(1500);
@@ -42,8 +42,8 @@ public class Main {
         System.out.println("=== TESTING CS3 ===");
 
         System.out.println("Find player by ID:");
-        // Show the detail of Player 3
-        System.out.println("========================== Player Details ==========================");
+        // Show the detail of Model.Player 3
+        System.out.println("========================== Model.Player Details ==========================");
         player3.showDetail();C
 
         score1.showDetail();
@@ -54,5 +54,5 @@ public class Main {
         // Sort all player based on highscore
 
         System.out.println("Scores for player1:");
-        // Find Score of Player 1
+        // Find Model.Score of Model.Player 1
     }

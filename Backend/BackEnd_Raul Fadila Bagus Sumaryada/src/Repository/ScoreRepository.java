@@ -40,7 +40,7 @@ public class ScoreRepository {
 
 
     findTopScores(int limit){
-        @Query("SELECT s FROM Score s ORDER BY s.value DESC")
+        @Query("SELECT s FROM Model.Score s ORDER BY s.value DESC")
         List<Score> findTopScores(int limit);
         return List<Score>;
     }
@@ -54,14 +54,14 @@ public class ScoreRepository {
 
     @Param("playerId")
     getTotalCoinsByPlayerId(UUID playerId){
-        @Query("SELECT SUM(s.coinsCollected) FROM Score s WHERE s.playerId =\n" +
+        @Query("SELECT SUM(s.coinsCollected) FROM Model.Score s WHERE s.playerId =\n" +
                 ":playerId")
         return int;
     }
 
     @Param("playerId")
     getTotalDistanceByPlayerId(UUID playerId){
-        @Query SELECT SUM("s.distanceTravelled) FROM Score s WHERE s.playerId =\n" +
+        @Query SELECT SUM("s.distanceTravelled) FROM Model.Score s WHERE s.playerId =\n" +
                 ":playerId")
         return int;
     }
