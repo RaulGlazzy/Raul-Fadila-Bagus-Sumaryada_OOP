@@ -40,3 +40,8 @@ void applyGravity(float delta){
 void fly(float delta){
 
 }
+
+public void checkBoundaries(Ground ground, float ceilingY){
+
+}
+
