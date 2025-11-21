@@ -4,6 +4,8 @@ import com.badlogic.gdx.backends.lwjgl3.Lwjgl3Application;
 import com.badlogic.gdx.backends.lwjgl3.Lwjgl3ApplicationConfiguration;
 import com.rauly.frontend.Main;
 
+import java.util.Observer;
+
 /** Launches the desktop (LWJGL3) application. */
 public class Lwjgl3Launcher {
     public static void main(String[] args) {
@@ -35,3 +37,8 @@ public class Lwjgl3Launcher {
         return configuration;
     }
 }
+
+public void fly(){}
+
+addObserver(Observer observer){}
+removeObserver(Observer observer){}

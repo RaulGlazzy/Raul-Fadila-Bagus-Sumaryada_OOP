@@ -1,0 +1,11 @@
+package com.rauly.frontend.lwjgl3.states;
+
+import com.badlogic.gdx.graphics.g2d.SpriteBatch;
+
+public interface GameState {
+
+    public void update(float delta){}
+    public void render(SpriteBatch batch){}
+    public void dispose(){}
+
+}

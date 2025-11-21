@@ -16,3 +16,10 @@ public class ScoreUIObserver {
     }
 
 }
+
+public void update(int score){}
+public void render(int score){
+    System.out.println("Score: ");
+}
+public void dispose(){}
+
